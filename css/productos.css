@@ -1,0 +1,79 @@
+
+.imagenPrincipal{
+    width: 100%;
+}
+
+.tituloSeccion{
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    text-wrap: wrap;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.productosVenta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    margin-bottom: 50px;
+    padding: 20px 7vw;
+}
+
+.producto{
+    cursor: pointer;
+    outline: 1px solid black;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    flex: 1 1 140px;
+    margin: 20px 10px;
+
+    text-align: center;
+}
+
+.producto:hover{
+    box-shadow: 10px 10px 10px #00000070;
+    transition: 0.8s;
+}
+
+.nombreProducto{
+    font-size: 90%;
+    padding: 5%;
+}
+
+.imagenProducto {
+    max-width: 100%;
+    height: auto;
+}
+
+.descripcionProducto{
+    padding: 5%;
+    color: #707070;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60%;
+}
+
+.precioProducto{
+    color: #4985BB;
+    font-size: 200%;
+}
+
+.botonCarrito{
+    cursor: pointer;
+    border: none;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 5%;
+    margin: 5% 0;
+    text-transform: uppercase;
+    background-color:rgb(0, 0, 0);
+    color: white;
+}
+
+.botonCarrito:hover{
+    background-color: #4985BB;
+    box-shadow: 5px 5px 10px #00000070;
+    transition: 0.5s;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Barrilete Cósmico</title>
+    <link rel="icon" href="./assets/logoRedondo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/generales.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <nav class="seccionNavHeader">
+            <a href="index.html" class="enlaceLogo">
+                <img src="./assets/logo.jpg" alt="Barrilete Cósmico" class="logoHeader">
+            </a>
+            <input type="checkbox" id="check">
+            <label for="check" class="menuBoton">☰
+            </label>
+            <ul class="barraNav">
+                <li class="opciones"><a href="index.html#user" class="navegar">Usuario</a></li>
+                <li class="opciones"><a href="index.html" class="navegar paginaActual">Home</a></li>
+                <li class="opciones"><a href="./pages/productos.html" class="navegar">Productos</a></li>
+                <li class="opciones"><a href="./pages/locales.html" class="navegar">Tiendas</a></li>
+                <li class="opciones"><a href="./pages/contacto.html" class="navegar">Contacto</a></li>
+                <li class="opciones"><a href="./pages/carrito.html" class="navegar">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./assets/indexFondo1.jpg" class="d-block imagenCarrusel" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./assets/indexFondo2.jpg" class="d-block imagenCarrusel" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./assets/indexFondo3.jpg" class="d-block imagenCarrusel" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <h1 class="slogan">"Explora el mundo del fútbol, vístete para el éxito."</h1>
+        <a href="./pages/productos.html" class="accesoProductos">NUESTROS PRODUCTOS</a>
+
+
+        </section>
+        <section class="seccionNosotros">
+            <p class="nosotros">
+                Nos dedicamos apasionadamente a proporcionar a nuestros clientes amantes del fútbol los mejores
+                productos y servicios, impulsados por la excelencia y la pasión por el deporte. Somos la elección
+                preferida de cada jugador y aficionado, ofreciendo una experiencia de compra única que va más allá de la
+                transacción comercial.
+            </p>
+        </section>
+        <section class="seccionArticulos">
+            <article class="contenedorArticulos">
+                <a class="enlace enlaceBotines" href="./pages/productos.html#seccionBotines">
+                    <h2>BOTINES</h2>
+                </a>
+            </article>
+            <article class="contenedorArticulos">
+                <a class="enlace enlaceGuantes" href="./pages/productos.html#seccionGuantes">
+                    <h2>GUANTES</h2>
+                </a>
+            </article>
+            <article class="contenedorArticulos">
+                <a class="enlace enlaceIndumentaria" href="./pages/productos.html#seccionIndumentaria">
+                    <h2>INDUMENTARIA</h2>
+                </a>
+            </article>
+            <article class="contenedorArticulos">
+                <a class="enlace enlaceAccesorios" href="./pages/productos.html#seccionAccesorios">
+                    <h2>ACCESORIOS</h2>
+                </a>
+            </article>
+        </section>
+        <section class="seccionUsuario" id="user">
+            
+            <div class="contenedor">
+                <div class="contenedorTexto">
+                    <p id="textoUser"></p>
+        
+                    <button id="abrirRegistro" class="botonAbrir">REGISTRARME</button>
+                    
+                    <button class="botonAbrir" id="abrirLogin">INICIAR SESIÓN</button>
+                    
+                    <button class="botonAbrir" id="cerrarSesion" type="button" style="display: none;">CERRAR SESIÓN</button>
+                </div>
+            </div>
+            
+            <div class="login" id="seccionRegistro">
+                <dialog id="ventanaRegistro" class="ventanaEmergente">
+                    <h2>
+                        REGISTRATE:
+                    </h2>
+                    <form>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" pattern="[A-Za-z ]+" title="Solo letras y espacios, sin números ni caracteres especiales" required>
+                        <br>
+                        <label for="dni">DNI:</label>
+                        <input type="text" id="dni" name="dni" pattern="[0-9]{7,8}" title="Su numero de documento debe tener de 7 a 8 dígitos" required>
+                        <br>
+                        <label for="telefono">Número de Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" title="Número de teléfono inválido" pattern="[0-9]+" required>
+                        <br>
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+                        <br>
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" id="password" name="contrasena" pattern=".{6,}" title="La contraseña debe tener al menos 6 caracteres" required>
+
+                        <button class="botonGuardar" type="submit" id="registrarUsuario">Registrarme</button>
+                    </form>
+                    <button id="cerrarRegistro" class="botonCerrar">✖︎</button>
+                </dialog>
+            </div>
+
+            <div class="login" id="seccionIniciarSesion">
+                <dialog id="ventanaLogin" class="ventanaEmergente">
+                    <h2>
+                        INICIA SESIÓN:
+                    </h2>
+                    <form>
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correoUsuario" name="correo" required>
+                        <br>
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" id="passwordUsuario" name="contrasena" required>
+                        <br>
+                        <button class="botonGuardar" type="submit" id="loguearUsuario">Iniciar Sesión</button>
+                    </form>
+                    <button class="botonCerrar" id="cerrarLogin">✖︎</button>
+                </dialog>
+            </div>
+        </section>
+        <section class="seccionNosotros">
+            <p class="nosotros">
+                Reconocidos como el referente líder de los artículos deportivos de fútbol en el país , destacándonos por
+                la calidad inigualable de nuestros productos y la excelencia en el servicio al cliente. Buscamos crear
+                un impacto positivo en la comunidad futbolística al fomentar la pasión por el juego y promover un estilo
+                de vida activo y saludable."
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <section class="seccionTextoFooter">
+            <article class="textoFooter">
+                <a href="mailto: tobijurgens8@gmail.com"> Email: tobijurgens8@gmail.com </a>
+            </article>
+            <article class="textoFooter">
+                <a href="tel: 3513159420" ">Teléfono: 3513159420</a>
+            </article>
+    
+            <article class="textoFooter">
+                    <p>&copy; 2024 - Barrilete Cósmico </p>
+            </article>
+        </section>
+        <section class="seccionImagenesFooter">
+            <article>
+                <img src="./assets/adidas.png" alt="Adidas" class="imagenesFooter">
+            </article>
+            <article>
+                <img src="./assets/nike.png" alt="Nike" class="imagenesFooter">
+            </article>
+            <article>
+                <img src="./assets/puma.png" alt="Puma" class="imagenesFooter">
+            </article>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="./js/ventanaEmergente.js"></script>
+    <script src="./js/registro.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/cerrarlogin.js"></script>
+</body>
+
+</html>

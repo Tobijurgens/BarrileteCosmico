@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barrilete Cósmico</title>
+    <link rel="icon" href="../assets/logoRedondo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/generales.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="seccionNavHeader">
+            <a href="../index.html" class="enlaceLogo">
+                <img src="../assets/logo.jpg" alt="Barrilete Cósmico" class="logoHeader">
+            </a> 
+            <input type="checkbox" id="check">
+            <label for="check" class="menuBoton">☰
+            </label>
+            <ul class="barraNav">
+                <li class="opciones"><a href="../index.html#user" class="navegar">Usuario</a></li>
+                <li class="opciones"><a href="../index.html" class="navegar">Home</a></li>
+                <li class="opciones"><a href="./productos.html" class="navegar">Productos</a></li>
+                <li class="opciones"><a href="./locales.html" class="navegar">Tiendas</a></li>
+                <li class="opciones"><a href="contacto.html" class="navegar paginaActual">Contacto</a></li>
+                <li class="opciones"><a href="./carrito.html" class="navegar">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <img class="imagenFondo" src="../assets/fondoContacto1.png" alt="">
+        <h1 class="titulo">BARRILETE CÓSMICO - CONTACTO</h1>
+        <div class="seccionContactos">
+            <h2>Nuestras redes sociales: </h2>
+            <div class="formasContacto">
+                <article>
+                    <a href="https://www.instagram.com/tobijurgens_/" target="_blank">
+                        <h3>Instagram</h3>
+                        <img class="imagenContacto" src="../assets/instagram.png" alt="Instagram">
+                    </a>
+                </article>
+                <article>
+                        <a href="https://www.facebook.com/" target="_blank">
+                        <h3>Facebook</h3>
+                        <img class="imagenContacto" src="../assets/facebook.png" alt="Facebook">
+                    </a>
+                </article>
+                <article>
+                        <a href="https://twitter.com/home" target="_blank">
+                        <h3>Twitter</h3>
+                        <img class="imagenContacto" src="../assets/twitter.png" alt="Twitter">
+                    </a>
+                </article>
+            </div>
+
+            <h2>Otras formas de contacto: </h2>
+            <div class="formasContacto">
+                <article>
+                    <a href="https://api.whatsapp.com/send?phone=543513159420&text=Hola!" target="_blank">
+                    <h3>WhatsApp</h3>
+                    <img class="imagenContacto" src="../assets/whatsapp.png" alt="WhatsApp">
+                    </a>
+                </article>
+                <article>
+                    <a href="mailto: tobijurgens8@gmail.com" target="_blank">
+                    <h3>Correo Electrónico</h3>
+                    <img class="imagenContacto" src="../assets/correoelectronico.png" alt="WhatsApp">
+                    </a>
+                </article>
+                <article>
+                    <a href="tel: 3513159420">
+                    <h3>Teléfono</h3>
+                    <img class="imagenContacto" src="../assets/telefono.png" alt="Teléfono">
+                    </a>
+                </article>
+            </div>
+        </div>
+        <img class="imagenFondo" src="../assets/fondoContacto3.png" alt="">
+        <form class="seccionFormulario">
+            <h2>
+                Formulario de contacto:
+            </h2>
+            <div class="campoFormulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="campoFormulario">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="campoFormulario">
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" required>
+            </div>
+            <div class="campoFormulario">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="campoFormulario">
+                <label for="telefono">Número de Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="campoFormulario">
+                <label for="motivo">Motivo: </label>
+                <select name="Motivo" id="motivo"> 
+                    <option>Otro</option>
+                    <option>Cambios y devoluciones</option>
+                    <option>Problemas con envío</option>
+                    <option>Producto con falla</option>
+                    <option>Garantía de producto</option>
+                </select>
+            </div>
+            <div class="campoFormulario">
+                <label for="mensaje">Reclamo:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Ingrese el motivo por el cual se contacta" required></textarea>
+            </div>
+    
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+        <img class="imagenFondo" src="../assets/fondoContacto2.png" alt="">
+    </body>
+    <footer>
+        <section class="seccionTextoFooter">
+            <article class="textoFooter">
+                <a href="mailto: tobijurgens8@gmail.com" > Email: tobijurgens8@gmail.com </a>
+            </article>
+            <article class="textoFooter">
+                <a href="tel: 3513159420" ">Teléfono: 3513159420</a>
+            </article>
+    
+            <article class="textoFooter">
+                <p>&copy; 2024 - Barrilete Cósmico </p>
+            </article>
+        </section>
+        <section class="seccionImagenesFooter">
+            <article>
+                <img src="../assets/adidas.png" alt="Adidas" class="imagenesFooter"> 
+            </article>
+            <article>
+                <img src="../assets/nike.png" alt="Nike" class="imagenesFooter">
+            </article>
+            <article>
+                <img src="../assets/puma.png" alt="Puma" class="imagenesFooter">
+            </article>
+        </section>
+    </footer>
+</body>
+</html>
