@@ -36,7 +36,7 @@ body{
     margin: 0 40vw 30px 40vw;
 
     color: rgb(255, 255, 255);
-    transition: background-color 0.8s;
+    transition: 0.8s;
 
     font-weight: 100;
     font-size: 80%;
@@ -46,6 +46,7 @@ body{
 .accesoProductos:hover{
     color: #000000;
     background-color: rgba(146, 146, 146, 0.432);
+    transform: scale(1.1);
 }
 
 .seccionArticulos{
@@ -85,6 +86,7 @@ body{
 
 .enlace:hover{
     filter: brightness(0.6);
+    transform: scale(1.1);
     box-shadow: -6px 6px 4px #000000da;
 }
 
@@ -169,6 +171,7 @@ body{
 .contenedorTexto button:hover{
     background-color: rgba(0, 0, 0, 0.74);
     color: white;
+    transform: scale(1.1);
     transition: 0.5s;
 }
 
@@ -192,6 +195,11 @@ body{
     right: 0;
     padding: 1% 2%;
     font-size: 150%;
+}
+
+.botonCerrar:hover{
+    transform: scale(1.5);
+    transition: 0.5s;
 }
 
 .ventanaEmergente h2{
@@ -230,3 +238,8 @@ form input{
     border: none;
 }
 
+.botonGuardar:hover{
+    background-color: black;
+    transform: scale(1.05);
+    transition: 0.7s;
+}

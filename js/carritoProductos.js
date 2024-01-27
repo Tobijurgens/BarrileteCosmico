@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function(){
             const nuevoProducto = document.createElement('tr');
             nuevoProducto.innerHTML = `
                 <td class="contenedorImagen"><img class="imagenProducto" src="${producto.img}" alt="${producto.nombre}"></td>
-                <td>
+                <td class="infoProducto">
                     <ul>
                         <li class="nombreProducto">${producto.nombre}</li>
                         <li class="descripcionProducto">${producto.descripcion}</li>

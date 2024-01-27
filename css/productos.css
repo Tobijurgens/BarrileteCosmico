@@ -35,12 +35,15 @@
 
 .producto:hover{
     box-shadow: 10px 10px 10px #00000070;
-    transition: 0.8s;
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 
 .nombreProducto{
+    height: 40px;
     font-size: 90%;
-    padding: 5%;
+    padding: 5px;
+    text-transform: uppercase;
 }
 
 .imagenProducto {
@@ -48,8 +51,10 @@
     height: auto;
 }
 
+
 .descripcionProducto{
-    padding: 5%;
+    padding: 10px;
+    height: 50px;
     color: #707070;
     font-family: 'Montserrat', sans-serif;
     font-size: 60%;
@@ -75,5 +80,6 @@
 .botonCarrito:hover{
     background-color: #4985BB;
     box-shadow: 5px 5px 10px #00000070;
+    transform: scale(1.2);
     transition: 0.5s;
 }

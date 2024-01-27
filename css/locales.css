@@ -31,6 +31,7 @@
 .tienda:hover{
     background: rgba(214, 214, 214, 0.418);
     box-shadow: 0 0 4vh rgba(0, 0, 0, 0.514);
+    transform: scale(1.05);
     transition: 0.8s;
 }
 
